@@ -3,6 +3,7 @@
 require_once('../../../private/initialize.php');
 
 require_login();
+require_admin();
 
 if(!isset($_GET['id'])) {
   redirect_to(url_for('/bird-staff/admins/index.php'));

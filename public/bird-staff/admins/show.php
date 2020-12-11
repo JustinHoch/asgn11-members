@@ -1,6 +1,9 @@
 <?php require_once('../../../private/initialize.php'); ?>
 
-<?php require_login(); ?>
+<?php 
+require_login();
+require_admin();
+?>
 
 <?php
 
@@ -37,6 +40,18 @@ $admin = Admin::find_by_id($id);
       <dl>
         <dt>Username</dt>
         <dd><?php echo h($admin->username); ?></dd>
+      </dl>
+      <dl>
+        <dt>User Level</dt>
+        <dd>
+        <?php
+            if($admin->user_level == 'm'){
+              echo 'Member';
+            }else{
+              echo 'Admin';
+            }
+          ?>
+        </dd>
       </dl>
     </div>
 
