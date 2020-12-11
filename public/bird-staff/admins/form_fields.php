@@ -27,6 +27,16 @@ if(!isset($admin)) {
 </dl>
 
 <dl>
+  <dt>User Level</dt>
+  <dd>
+    <select name="admin[user_level]" id="user_level">
+      <option value="a" <?php if($admin->user_level == 'a'){echo 'selected';} ?>>Admin</option>
+      <option value="m" <?php if($admin->user_level == 'm'){echo 'selected';} ?>>Member</option>
+    </select>
+  </dd>
+</dl>
+
+<dl>
   <dt>Password</dt>
   <dd><input type="password" name="admin[password]" value="" /></dd>
 </dl>
