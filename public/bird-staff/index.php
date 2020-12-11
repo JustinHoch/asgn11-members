@@ -10,7 +10,9 @@
     <h2>Main Menu</h2>
     <ul>
       <li><a href="<?php echo url_for('/bird-staff/views/index.php'); ?>">Birds</a></li>
-      <li><a href="<?php echo url_for('/bird-staff/admins/index.php'); ?>">Admins</a></li>
+      <?php if($session->user_level == 'a') {?>
+        <li><a href="<?php echo url_for('/bird-staff/admins/index.php'); ?>">Admins</a></li>
+      <?php } ?>
     </ul>
   </div>
 
