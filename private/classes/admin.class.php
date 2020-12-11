@@ -21,7 +21,7 @@ class Admin extends DatabaseObject {
     $this->last_name = $args['last_name'] ?? '';
     $this->email = $args['email'] ?? '';
     $this->username = $args['username'] ?? '';
-    $this->user_level = $args['user_level' ?? 'm']
+    $this->user_level = $args['user_level' ?? 'm'];
     $this->password = $args['password'] ?? '';
     $this->confirm_password = $args['confirm_password'] ?? '';
   }
