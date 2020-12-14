@@ -27,6 +27,7 @@
         </a>
       </h1>
       <ul style="padding-left: 0; text-align: center;">
-        <li><a href="<?php echo url_for('/bird-staff/login.php'); ?>">Login</a></li>
+        <li style="display: inline-block;"><a href="<?php echo url_for('/bird-staff/login.php'); ?>">Login</a></li>
+        <li style="display: inline-block; margin-left: 1rem;"><a href="<?php echo url_for('/signup.php'); ?>">Sign Up</a></li>
       </ul>
     </header>
