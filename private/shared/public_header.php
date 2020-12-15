@@ -21,7 +21,7 @@
           the url_for function is a utility function that Mr. Skoglund built.
           It is in the functions.php file. 
         -->
-        <a href="<?php echo url_for('index.php'); ?>">
+        <a href="<?php echo url_for('bird.php'); ?>">
           <img class="bike-icon" src="<?php echo url_for('/images/tufted-titmouse.jpg') ?>" /><br />
           WNC Birds
         </a>
